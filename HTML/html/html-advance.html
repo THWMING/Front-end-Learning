@@ -1,0 +1,63 @@
+<p>HTML 使用 &lt;blockquote&gt; 元素来包裹表示引用， 并在cite属性里用URL指向引用资源</p>
+<p>这是块引用：</p>
+<blockquote cite="https://www.bing.com">
+    <p>我在这里引用了<strong>bing</strong>这个网页</p>
+    <p>这里会自动缩进表示引用</p>
+</blockquote>
+<p>这是行内引用：</p>
+<p>
+    引用元素 &lt;q&gt; 是<q cite="https://www.bing.com">用于不需要段落分隔的短引用</q> <br>
+    这里因为引用所以添加了引号<br>
+    但是浏览器并不能显示cite的内容
+</p>
+<p>
+    &lt;abbr&gt;用来包裹一个缩略语，告知用户缩写的含义 <br>
+    第 33 届<abbr title="夏季奥林匹克运动会">奥运会</abbr>已于 2024 年 7 月在法国巴黎举行
+</p>
+<!-- <address> 用来标记联系方式，会改变文本格式 -->
+<p>本页面底部可以找到<a href="#Mailing_address">公司邮寄地址</a>。</p>
+<address> 
+  <p>
+    Chris Mills<br />
+    Manchester<br />
+    The Grim North<br />
+    UK
+  </p>
+
+  <ul>
+    <li>Tel: 01234 567 890</li>
+    <li>Email: me@grim-north.co.uk</li>
+  </ul>
+</address>
+<p>
+    上标和下标，&lt;sup&gt; 表示上标, &lt;sub&gt; 表示下标
+</p>
+<p>
+    HTML 支持标记时间日期（供机器识别）的 &lt;time&gt; 元素
+</p>
+<h2 id="Mailing_address">邮寄地址</h2>
+<p>
+    在下载中，应该像以下实例创立一个下载资源，以减少混乱
+</p>
+<p>
+  <a href="https://www.example.com/large-report.pdf">
+    下载销售报告（PDF，大小为 10 MB）
+  </a>
+</p>
+
+<p>
+  <a href="https://www.example.com/video-stream/" target="_blank">
+    观看视频（将在新标签页中播放，HD 画质）
+  </a>
+</p>
+<p>下载中可以使用download属性，来改变默认保存文件名</p>
+
+<p>
+    电子邮件链接可以直接跳转到邮件，运用 mailto: URL协议实现
+    <a href="mailto:nowhere@mozilla.org">向nowhere发邮件</a>
+</p>
+<a>
+  <!--通过修改href，来改变发送邮件的一些属性-->
+  href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+  发送含有 cc、bcc、主题和主体的邮件
+</a>

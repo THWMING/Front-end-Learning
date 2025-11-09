@@ -1,0 +1,21 @@
+<img src="../images/Tomori.png" alt="She is Tomori" width="300" height="400" Title="Tomori with Anon">
+<!-- 使用 width 和 height 来改变图片，这样可以防止图片加载挤占文本-->
+<!-- 使用<figue>来提供一个语义容器，在文字与图片间建立清晰的关联
+     <figcaption> 描述了 <figure> 元素的内容 -->
+<!-- 可以用CSS在HTML中插入图片，可以更好的控制图片的位置，但是没有任何语义 -->
+<!-- 使用<video>和<audio>元素来嵌入视频 -->
+<video src="rabbit320.web" controls>
+     <p><!-- control用户能控制视频音频的播放-->
+          你的浏览器不支持HTML视频，可点击<a href="rabbit320.mp4">此链接</a>观看。
+     </p>
+</video>
+<!-- 使用<source>元素来提供多种格式的视频源，浏览器会选择它支持的第一个
+     在<source>中使用type指定类型，浏览器通过检查类型跳过，节省时间 -->
+<video controls>
+     <!-- video的其他属性：autoplay自动播放；loop循环播放；muted默认静音
+          poster播放前显示指向的图像，preload缓冲大文件-->
+  <source src="rabbit320.mp4" type="video/mp4" />
+  <source src="rabbit320.webm" type="video/webm" />
+  <p>你的浏览器不支持此视频。可点击<a href="rabbit320.mp4">此链接</a>观看</p>
+</video>
+<!-- 视频转录相关内容 -->
