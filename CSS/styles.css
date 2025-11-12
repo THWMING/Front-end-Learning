@@ -1,0 +1,38 @@
+h1 {
+    color: red
+}
+
+/* 同一样式运用到不同元素，形成选择器列表，使用空格使文本更易读 */
+/* 选择器列表中，如果一个选择器语法无效（存在错误），那么整个规则被忽略 */
+p,
+li{
+    color: blue;
+}
+
+.special {
+    color: green;
+}
+
+/* 包含选择符 */
+li em {
+    font-style: normal;
+    color: orange;
+}
+
+/* 相邻选择符 */
+h1 + p {
+    font-size: 200%;
+}
+
+/* 根据状态确定样式 */
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    text-decoration: none;
+}
