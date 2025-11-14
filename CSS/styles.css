@@ -36,3 +36,18 @@ a:visited {
 a:hover {
     text-decoration: none;
 }
+
+article p:first-child::first-line {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+/* p:first-child 是伪类，选择一类型的第一个元素
+    ::first-line 是伪元素，选择元素的第一行文本 */
+
+/* ::after ::before 使用CSS将内容插入到文档中（末尾或者开头）
+    一般是用来加一个图标（因为不会被屏幕阅读器读出—）*/
+
+.ul  li {
+  border-top: 5px solid red;
+}
